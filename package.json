@@ -1,5 +1,5 @@
 {
-  "name": "core",
+  "name": "@ahdcreative/gtm-core",
   "version": "1.0.0",
   "description": "A framework-agnostic TypeScript core for Google Tag Manager integration.",
   "type": "module",
