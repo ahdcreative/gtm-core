@@ -1,10 +1,12 @@
 export interface GTMEvent {
   event: string;
+  // biome-ignore lint/suspicious/noExplicitAny: GTM events can have any structure
   [key: string]: any;
 }
 
 declare global {
   interface Window {
+    // biome-ignore lint/suspicious/noExplicitAny: DataLayer is an array of anything
     dataLayer: any[];
   }
 }

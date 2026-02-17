@@ -15,7 +15,7 @@ export function loadGTM(options: GTMOptions): void {
   if (hasScript()) return;
 
   // Initialize dataLayer
-  pushToDataLayer({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+  pushToDataLayer({ "gtm.start": Date.now(), event: "gtm.js" });
 
   // Build URL
   const params = buildQueryString(queryParams);
